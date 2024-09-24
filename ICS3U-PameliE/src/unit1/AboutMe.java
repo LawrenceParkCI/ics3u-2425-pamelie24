@@ -17,6 +17,7 @@ public class AboutMe {
 		System.out.println("I Love LPCI's Hockey team, Go Panthers");
 		System.out.println("--------------------------------------");
 		System.out.println("Spetember 23rd - 27th Timetable");
+		System.out.println("------------------------------------------------------");
 		System.out.format("Monday: %-10sICS3U1- %7s", "Period 1:","9:00am-10:15am");
 		System.out.println(" ");
 		System.out.format("%17sPPL3OM- %7s", "Period 2:","10:20am-11:40am");
