@@ -12,8 +12,13 @@ public class Bingo {
 		System.out.println("5. Repeat steps 1-4 until someone scores a BINGO");
 		System.out.println("6. The winning player must call out BINGO to make it official");
 		System.out.println("------------------------------------------------------------------");
-		System.out.println("\n");
-		
+		System.out.format("%10s%10s%10s%10s%10s","B", "I", "N", "G", "O");
+		System.out.format("\n%10s%10s%10s%10s%10s","3", "17", "37", "59", "66");
+		System.out.format("\n%11s%9s%10s%10s%10s", "13", "28", "43", "49", "73");
+		System.out.format("\n%10s%10s%11s%9s%10s", "9", "22", "FREE", "60", "60");
+		System.out.format("\n%11s%9s%10s%10s%10s", "10", "24", "33", "55", "68");
+		System.out.format("\n%10s%10s%10s%10s%10s", "2", "23", "30", "46", "75");
+		System.out.format("\n------------------------------------------------------------------");
 
 	}
 
