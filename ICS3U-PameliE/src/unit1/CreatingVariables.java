@@ -1,9 +1,27 @@
 package unit1;
 
+/**
+ * Description: Date:
+ * 
+ * @Ethan Pameli
+ */
 public class CreatingVariables {
-
+	/**
+	 *
+	 * @param
+	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		System.out.println("Warm-up");
+		// Warmup: print your name
+		System.out.println("Ethan Pameli");
+
+		// Warmup: print the calculation for the area of a square with side length 25
+		System.out.println("25*25");
+		System.out.println("A=625");
+
+		// Key Question: what if the value I want to use needs to change?
+		// You can change the numbers in the println
+
 		/*
 		 * Variables - A variable is a place in memory that you can tell your computer
 		 * to set aside when you make a program. - This location can be used to store a
@@ -62,7 +80,5 @@ public class CreatingVariables {
 
 		// Note: When I use the word create in the future, I typically mean declare and
 		// initialize
-
 	}
-
 }
