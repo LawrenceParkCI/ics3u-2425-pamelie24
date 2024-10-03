@@ -9,7 +9,7 @@ public class RectangleArea {
 		
 		Scanner sc = new Scanner (System.in);
 		//declare variables
-		int length, width;
+		int length, width,depth;
 		
 		//get the user input 
 		System.out.println("AREA PROGRAM");
@@ -18,6 +18,16 @@ public class RectangleArea {
 		
 		System.out.print("Type in the width of the rectangle and <Enter>:");
 		width = sc.nextInt();
+		
+		System.out.print("Type in the depth of the rectangle and <Enter>:");
+		depth = sc.nextInt();
+		
+		//calculate the area
+		int volume = length * width * depth;
+		
+		//print the output
+		System.out.println("The volume of your rectangle is " + volume);
+		sc.close();
 
 
 	}
