@@ -1,4 +1,9 @@
 package unit1;
+/**
+ * Description:
+ * Date:
+ * @author Ethan Pameli
+ */
 
 import java.util.Scanner;
 
