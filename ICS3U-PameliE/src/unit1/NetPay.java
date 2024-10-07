@@ -18,7 +18,7 @@ public class NetPay {
 		double tax;
 		
 		//get the user input 
-		System.out.println("AREA PROGRAM");
+		System.out.println("Net Pay");
 		System.out.print("Type in the hours your employee or you worked and <Enter>:");
 		hours = sc.nextInt();
 		

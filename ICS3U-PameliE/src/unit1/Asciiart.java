@@ -1,5 +1,7 @@
 package unit1;
-
+/**
+ * Description: completed ascii art name and image, using format and println
+ */
 public class Asciiart {
 
 	public static void main(String[] args) {

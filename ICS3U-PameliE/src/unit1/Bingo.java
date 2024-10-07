@@ -1,5 +1,10 @@
 package unit1;
-
+/**
+ * Description:this code prints out a formated bingo card
+ * Date: 2024-09-25
+ * @author Ethan Pameli
+ * 
+ */
 public class Bingo {
 
 	public static void main(String[] args) {
