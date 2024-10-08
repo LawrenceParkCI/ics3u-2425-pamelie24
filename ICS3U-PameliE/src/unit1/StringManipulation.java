@@ -24,13 +24,18 @@ public class StringManipulation {
 		System.out.println("\n" + sentence);
 		System.out.println(sentence.toUpperCase());
 		System.out.println(sentence.toLowerCase());
-		System.out.println("The sentence is " + sentence.length() + "characters long");
-		System.out.println("At index 5, the character displayed is:" + sentence.charAt(5));
+		System.out.println("The sentence is " + sentence.length() + " characters long");
+		System.out.println("At index 5, the character displayed is: " + sentence.charAt(5));
 		sc.close();
 		
 		//BONUS
-		
-		System.out.println("BONUS");
+		 // Output just the first word of the String
+		String firstWord = sentence.split(" ")[0];
+		System.out.println("The first word is: " + firstWord);
+			       
+		// Output just the last word of the String
+		String lastWord = sentence.split(" ")[sentence.split(" ").length - 1];
+		System.out.println("The last word is: " + lastWord);
 		
 		
 
