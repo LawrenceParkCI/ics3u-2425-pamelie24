@@ -38,25 +38,22 @@ public class Alive {
 		
 		
 		//print the output
+		System.out.format("\n");
+		System.out.println("Enter your birthdate:");
+		System.out.println("Year: " + year1);
+		System.out.println("Month: " + month1);
+		System.out.println("Day: " + day1);
+		System.out.println("Enter Todays date:");
+		System.out.println("Year: " + year2);
+		System.out.println("Month: " + month2);
+		System.out.println("Day: " + day2);
 		System.out.println("You have been alive for " + (tdays = ((year2 - year1)*365) + ((month2 - month1)*30) + ((day2 - day1))) + " days");
 		System.out.println("you have been asleep for " + (tdays)*8);
 		sc.close();
 
 
 		
-		//Alive
-		//Write a program, called Alive, that calculates the number of hours of your life that you have spent sleeping. Assume that you sleep 8 hours each night. To simplify the problem, assume that there are 30 days in each month and 365 days in each year. The program output should look similar to:
-
-			//Enter your birthdate:
-			//Year: 1990
-			//Month: 9
-			//Day: 8
-			//Enter today’s date:
-			//Year: 2006
-			//Month: 2
-			//Day: 12
-			//You have been alive for 5634 days.
-			//You have slept 45072 hours.
+		
 	}
 
 }
