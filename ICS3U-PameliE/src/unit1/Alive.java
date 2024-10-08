@@ -1,6 +1,6 @@
 package unit1;
 /**
- * Description: this code prints out the calculations for an employees net pay
+ * Description: this code prints out the calculations for 
  * Date:2024-10-07
  * @author Ethan Pameli
  */
