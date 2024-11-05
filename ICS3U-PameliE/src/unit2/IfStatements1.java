@@ -19,7 +19,7 @@ public class IfStatements1 {
       System.out.println("OMEGLUL");
     }    
 
-    //What prints out? Why?
+    //What prints out? Why? part 1 prints If because first number is less than second number
 
     System.out.println("\nPart 2: If, Else");
     System.out.println("----------------");
@@ -30,7 +30,7 @@ public class IfStatements1 {
       System.out.println("XQCL");
     }
 
-    //What prints out? Why?
+    //What prints out? Why? prints XQCL because the else block was executed
 
     System.out.println("\nPart 3: If, Else if, Else");
     System.out.println("-------------------------");
@@ -43,7 +43,7 @@ public class IfStatements1 {
       System.out.println("XQCL");
     }
 
-    //What prints out? Why?
+    //What prints out? Why? it prints sykSHY because of line 54
 
     System.out.println("\nPart 4: What's the difference?");
     System.out.println("------------------------------");
@@ -71,8 +71,8 @@ public class IfStatements1 {
       System.out.println("XQCL");
     }
 
-    //What prints out? Why?
-    //What is the difference between the first and second part?
+    //What prints out? Why? it Prints 1, KEW, OMEGALUL, 2, KEKW, OMEGSLUL, sykSHY because of lines 61,66,70
+    //What is the difference between the first and second part? the second part prints out skySHY
     
   }
 }
