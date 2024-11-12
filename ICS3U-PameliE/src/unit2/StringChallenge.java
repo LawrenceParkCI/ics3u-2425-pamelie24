@@ -32,6 +32,35 @@ public class StringChallenge {
 	
 	//declare more variables
 	String s3, s4;
+	
+	//receive user input
+	System.out.println("Input a colour");
+	s3 = sc.next();
+	System.out.println("Input another colour");
+	s4 = sc.next();
+	
+	//Print output
+	if (s3.equals(s4)== true) {
+		System.out.println("You typed the same colour in twice!");
+	}
+	else if (s3.equalsIgnoreCase(s4)) {
+		System.out.println("you typed in teh same colour but one of them was lowercase!!");
+	}
+	else {
+		System.out.println("you inputed two different colours");
+	}
+	
+	//declaring two new variables
+	int s5;
+	String s6 = "5";
+	
+	//recieve user input
+	System.out.println("input an intiger");
+	s5 = sc.nextInt();
+	
+	//Print output
+	System.out.println("The inputed intiger was:" +5); //implict casting
+	System.out.println("The total of the inputed intiger and 5 is:" + (s5 + Integer.parseInt(s6))); //explicit casting
     //This is for the portfolio
 
     /*
