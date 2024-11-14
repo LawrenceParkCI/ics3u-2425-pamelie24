@@ -14,7 +14,7 @@ public class IfChallenge3 {
 	  
 	  //Stating initial variables
 	  String q1;
-	  int quizpoints = 0;
+	  double quizpoints = 0;
 	  
 	  //Introduction to the quiz, receive user input
 	  System.out.print("Are you ready for your quiz!");
@@ -169,7 +169,7 @@ public class IfChallenge3 {
 			//Print final parts of the quiz and grade
 			  System.out.println("\nYour Quiz is finnished, Well done");
 			  System.out.println("Your Score is: " + quizpoints + "/4");
-			  System.out.println("\nYour Final Mark is: " + (quizpoints/4*100)+"%");
+			  System.out.println("\nYour Final Mark is: " + ((quizpoints / 4)*100)+"%");
 		  
 	  }
 	  else {
