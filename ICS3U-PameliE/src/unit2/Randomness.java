@@ -3,9 +3,9 @@ package unit2;
 
 /** 
  * https://www.geeksforgeeks.org/java-math-random-method-examples/
- * Description:
- * Date:
- * @author:
+ * Description: this is randomness
+ * Date: 2024-11-19
+ * @author: Ethan Pameli
  */
 
 
