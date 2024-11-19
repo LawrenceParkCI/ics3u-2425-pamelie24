@@ -27,6 +27,13 @@ public class DoubleDiceContest {
 		die4=(int)(Math.random()*6)+1;
 		System.out.println(die4);
 		System.out.println("The Computer Score is " + (die3+die4));
+		
+		if ((die3+die4) > (die1+die2)) {
+			System.out.println("\nThe computer has won");
+		}
+		else {
+			System.out.println("\nYou have won");
+		}
 		/*
 		 * Write code that simulates rolling two dice for the user and then two dice for the computer. 
 		 * The program should output the total of the two dice for both the user and the computer, 
