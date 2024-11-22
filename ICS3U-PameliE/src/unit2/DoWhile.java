@@ -64,5 +64,7 @@ public class DoWhile {
    } while (counter <= 20);
    
    System.out.println("#1 Victory Royal");
+   
+   in.close();
  }
 }
