@@ -6,6 +6,11 @@ package unit1;
  * 
  */
 public class Bingo {
+	/**
+	 * This is the entry point to the program
+	 * @param args
+	 */
+
 
 	public static void main(String[] args) {
 		// The Bingo Steps 

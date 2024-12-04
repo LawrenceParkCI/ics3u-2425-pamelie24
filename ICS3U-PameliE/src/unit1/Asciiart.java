@@ -3,6 +3,11 @@ package unit1;
  * Description: completed ascii art name and image, using format and println
  */
 public class Asciiart {
+	/**
+	 * This is the entry point to the program
+	 * @param args
+	 */
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub (8 spaces off of each) (on line 11 of papi image using 183 characters, and Normal 2 art) 

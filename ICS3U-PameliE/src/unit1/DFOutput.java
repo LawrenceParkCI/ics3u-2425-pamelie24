@@ -6,6 +6,11 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class DFOutput {
+	/**
+	 * This is the entry point to the program
+	 * @param args
+	 */
+
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

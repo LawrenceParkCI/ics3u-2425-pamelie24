@@ -8,6 +8,11 @@ Date: November 12, 2024
  */
 
 public class Switch1 {
+	/**
+	 * This is the entry point to the program
+	 * @param args
+	 */
+
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 

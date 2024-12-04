@@ -8,6 +8,11 @@ import java.util.Scanner;
  * @author 
  */
 public class UsingMathMethods {
+	/**
+	 * This is the entry point to the program
+	 * @param args
+	 */
+
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

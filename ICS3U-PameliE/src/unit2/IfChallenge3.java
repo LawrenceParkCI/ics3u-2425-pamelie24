@@ -8,6 +8,11 @@ import java.util.Scanner;
 */
 
 public class IfChallenge3 {
+	/**
+	 * This is the entry point to the program
+	 * @param args
+	 */
+
   public static void main(String[] args) {
 	  
 	  Scanner sc = new Scanner(System.in);

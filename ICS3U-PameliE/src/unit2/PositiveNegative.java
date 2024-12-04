@@ -8,6 +8,11 @@ import java.util.Scanner;
  * @author Ethan Pameli
  */
 public class PositiveNegative {
+	/**
+	 * This is the entry point to the program
+	 * @param args
+	 */
+
 	
 	
 	public static void main(String[] args) {

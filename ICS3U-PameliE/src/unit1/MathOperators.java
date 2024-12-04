@@ -8,9 +8,10 @@ package unit1;
  */
 public class MathOperators {
 	/**
-	 *
-	 * @param
+	 * This is the entry point to the program
+	 * @param args
 	 */
+
 	public static void main(String[] args) {
 		/*
 		 * Pre: Kind of Math, but not really What do you notice is happening?

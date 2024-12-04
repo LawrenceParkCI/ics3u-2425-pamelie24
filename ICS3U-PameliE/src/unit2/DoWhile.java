@@ -9,6 +9,11 @@ Date: 2024-11-21
 import java.util.Scanner;
 
 public class DoWhile {
+	/**
+	 * This is the entry point to the program
+	 * @param args
+	 */
+
  public static void main(String[] args) {
    /*
    A loop is another control structure that allows for repetition. It 

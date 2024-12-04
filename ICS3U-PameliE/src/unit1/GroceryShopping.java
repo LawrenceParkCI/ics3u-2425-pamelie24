@@ -13,6 +13,11 @@ import java.time.LocalDateTime;
 
 
 public class GroceryShopping {
+	/**
+	 * This is the entry point to the program
+	 * @param args
+	 */
+
 
 	public static void main(String[] args) {
 
