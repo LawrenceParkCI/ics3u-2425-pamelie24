@@ -9,11 +9,7 @@ Date: 2024-11-21
 import java.util.Scanner;
 
 public class While {
-	/**
-	 * This is the entry point to the program
-	 * @param args
-	 */
-
+	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		System.out.println("How many people are you planning to see?");
