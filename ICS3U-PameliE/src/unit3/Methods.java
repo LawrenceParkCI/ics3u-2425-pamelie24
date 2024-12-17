@@ -85,4 +85,11 @@ public static int doubleNumber(int num) {
 /*
   Create a method that has 2 int as parameters, and returns the larger one. The name of the method is larger.
 */
+public static int larger(int num1, int num2) {
+    if (num1 > num2) {
+        return num1;  // Return num1 if it's larger
+    } else {
+        return num2;  // Return num2 if it's larger or they are equal
+    }
+}
 }
