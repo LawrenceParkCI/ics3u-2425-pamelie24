@@ -1,129 +1,92 @@
 package culminating;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class culminatingReal {
 
-	public static void main(String[] args) {
-		  Scanner sc = new Scanner(System.in);
-		  
-		  //Stating initial variables
-		  String q1;
-		  double quizpoints = 0;
-		  
-		  //Introduction to the quiz, receive user input
-		  System.out.print("Are you ready for your quiz!");
-		  q1 = sc.next();
-		  
-		  //Print output
-		  if (q1.equalsIgnoreCase("Yes")) {
-			  System.out.println("Alright, it is now time to begin The Toronto Maple Leafs Quiz ");
-			
-				  //Declare new variables 
-				  String q2;
-				  
-				  //print question
-				  System.out.println("\nQuestion #1");
-				  System.out.println("Who is the team captian of the Toronto Maple Leafs?");
-				  System.out.println("a) John Tavares");
-				  System.out.println("b) Mitch Marner");
-				  System.out.println("c) Auston Matthews");
-				  System.out.println("d) Morgan Riley");
-				  
-				  //receive user input
-				  System.out.print("\nWhat is your answer:");
-				  q2 = sc.next();
-				  
-				  //Print output
-				  if (q2.equalsIgnoreCase("C")) {
-					  System.out.println("That is Correct! Good job");
-					  quizpoints +=1;
-				  }
-				  else {
-					  System.out.println("Wrong answer");
-				  }
-				  
-				  //declare new variables
-				  String q3;
-				  
-				  //Print Question
-				  System.out.println("\nQuestion #2");
-				  System.out.println("How many stanley cups have the Toronto Maple Leafs won?");
-				  System.out.println("a) 0");
-				  System.out.println("b) 7");
-				  System.out.println("c) 14");
-				  System.out.println("d) 13");
-				  
-				  //receive user input
-				  System.out.print("\nWhat is your answer:");
-				  q3 = sc.next();
-				  
-				  //Print Output
-				  if (q3.equalsIgnoreCase("D")) {
-					  System.out.println("That is Correct! Good job");
-					  quizpoints +=1;
-				  }
-				  else {
-					  System.out.println("Wrong answer");
-				  }
-				  
-				  //declare variables
-				  String q4;
-				  
-				  //Print Question
-				  System.out.println("\nQuestion #3");
-				  System.out.println("When was the last time the Toronto Maple leafs won the Stanley Cup?");
-				  System.out.println("a) 1967");
-				  System.out.println("b) 1972");
-				  System.out.println("c) 1990");
-				  System.out.println("d) 1963");
-				  
-				  //receive user input
-				  System.out.print("\nWhat is your answer:");
-				  q4 = sc.next();
-				  
-				  //Print Output
-				  if (q4.equalsIgnoreCase("A")) {
-					  System.out.println("That is Correct! Good job");
-					  quizpoints +=1;
-				  }
-				  else {
-					  System.out.println("Wrong answer");
-				  }
-				  
-				  //declare variable
-				  String q5;
-				  
-				  //Print Question
-				  System.out.println("\nQuestion #4");
-				  System.out.println("Who has the most points Toronto Maple leaf in history?");
-				  System.out.println("a) Jackson Teshima");
-				  System.out.println("b) Mats Sundin");
-				  System.out.println("c) Auston Matthews");
-				  System.out.println("d) Darryl sittler");
-				  
-				  //receive user input
-				  System.out.print("\nWhat is your answer:");
-				  q5 = sc.next();
-				  
-				  //Print Output
-				  if (q5.equalsIgnoreCase("B")) {
-					  System.out.println("That is Correct! Good job");
-					  quizpoints +=1;
-				  }
-				  else {
-					  System.out.println("Wrong answer");
-				  }
-				  
-				//Print final parts of the quiz and grade
-				  System.out.println("\nYour Quiz is finnished, Well done");
-				  System.out.println("Your Score is: " + quizpoints + "/4");
-				  System.out.println("\nYour Final Mark is: " + ((quizpoints / 4)*100)+"%");
-			  
-		  }
-		  else {
-			  System.out.println("Okay you will recive a 0, but thats your choice!");
-		  }
-	
-	  }
-	}
+    // Method to calculate the total score
+    public static int calculateScore(int currentScore, boolean isCorrect) {
+        if (isCorrect) {
+            currentScore += 1;
+        }
+        return currentScore;
+    }
+
+    // Method to check if the user's answer is correct
+    public static boolean checkAnswer(String correctAnswer, String userAnswer) {
+        return correctAnswer.equalsIgnoreCase(userAnswer.trim());
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+
+        int totalScore = 0;
+        int questionNumber = 1;
+
+        System.out.println("Welcome to the Grade 11 Accounting Test!");
+        System.out.println("Answer the questions below to the best of your ability.\n");
+
+        // Question 1: Multiple Choice
+        //ask question
+        System.out.println("Question " + questionNumber + ": What is the accounting equation?");
+        //provides answer options
+        System.out.println("A. Assets = Liabilities + Equity");
+        System.out.println("B. Assets = Revenue - Expenses");
+        System.out.println("C. Assets = Liabilities - Equity");
+        System.out.print("Enter your answer (A, B, or C): ");
+        String userAnswer = scanner.nextLine();
+        //Next line checks if the correct answer was chosen 
+        boolean isCorrect = checkAnswer("A", userAnswer);
+        totalScore = calculateScore(totalScore, isCorrect);
+        System.out.println(isCorrect ? "Correct!" : "Incorrect. The correct answer is A.");
+        questionNumber++;
+
+        // Question 2: True or False
+        System.out.println("\nQuestion " + questionNumber + ": True or False: Depreciation is a way to allocate the cost of an asset over its useful life.");
+        System.out.print("Enter your answer (True/False): ");
+        userAnswer = scanner.nextLine();
+        isCorrect = checkAnswer("True", userAnswer);
+        totalScore = calculateScore(totalScore, isCorrect);
+        System.out.println(isCorrect ? "Correct!" : "Incorrect. The correct answer is True.");
+        questionNumber++;
+
+        // Question 3: Random number-based question
+        int randomNumber = random.nextInt(1000) + 1; // Generate a random number 
+        //ASk user question
+        System.out.println("\nQuestion " + questionNumber + ": Suppose a company purchases equipment for $" + randomNumber + ". If the equipment depreciates by 10% annually, what will its value be after one year?");
+        System.out.print("Enter your answer: ");
+        double userAnswerDouble = scanner.nextDouble();
+        double correctValue = randomNumber * 0.9;
+        isCorrect = Math.abs(userAnswerDouble - correctValue) < 0.01; // Allow small margin of error
+        totalScore = calculateScore(totalScore, isCorrect);
+        System.out.println(isCorrect ? "Correct!" : String.format("Incorrect. The correct answer is %.2f.", correctValue));
+        questionNumber++;
+
+        // Question 4: Fill in the blank
+        System.out.println("\nQuestion " + questionNumber + ": Fill in the blank: Revenue - Expenses = ______.");
+        System.out.print("Enter your answer: ");
+        scanner.nextLine(); // Consume the newline
+        userAnswer = scanner.nextLine();
+        isCorrect = checkAnswer("Net Income", userAnswer);
+        totalScore = calculateScore(totalScore, isCorrect);
+        System.out.println(isCorrect ? "Correct!" : "Incorrect. The correct answer is Net Income.");
+        questionNumber++;
+
+        // Question 5: True or False
+        System.out.println("\nQuestion " + questionNumber + ": True or False: Accounts payable is an asset account.");
+        System.out.print("Enter your answer (True/False): ");
+        userAnswer = scanner.nextLine();
+        isCorrect = checkAnswer("False", userAnswer);
+        totalScore = calculateScore(totalScore, isCorrect);
+        System.out.println(isCorrect ? "Correct!" : "Incorrect. The correct answer is False.");
+        questionNumber++;
+        // Display final score
+        System.out.println("\nTest Completed!");
+        System.out.println("Your total score is: " + totalScore + " out of " + (questionNumber - 1));
+
+        scanner.close();
+    }
+}
+
