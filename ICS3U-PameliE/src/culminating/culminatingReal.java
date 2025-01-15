@@ -3,17 +3,17 @@ package culminating;
 import java.util.Random;
 import java.util.Scanner;
 /**
- * Date:
- * Description:
- * @author
+ * Date: 2025-01-14
+ * Description: This is my culminating code, this code is a 12 question, grade 11 accounting test. This code includes random number, fill in the blank,and multiple choice.
+ * @author Ethan Pameli
  */
 public class culminatingReal {
 
 	/**
-	 * Description: 
-	 * @param totalScore =>
-	 * @param isCorrect =>
-	 * @return
+	 * Description: This method calculates the score after each correct or incorrect question
+	 * @param totalScore => adds 1 to the score if the answer is correct
+	 * @param isCorrect => if answer is correct it adds 1 if its incorrect it returns to the current score 
+	 * @return => This returns the score after each question 
 	 */
 	public static double calculateScore(double totalScore, boolean isCorrect) {
 		if (isCorrect) {
@@ -23,10 +23,10 @@ public class culminatingReal {
 	}
 
 	/**
-	 * Description:
-	 * @param correctAnswer =>
-	 * @param userAnswer =>
-	 * @return
+	 * Description: This method is used to check if an answer inputed by the user is correct or not
+	 * @param correctAnswer => correct answer is used to compare the user input to the correct answer
+	 * @param userAnswer =>  stores the answer inputed by the user for each question 
+	 * @return => this returns if the answer is correct or incorrect 
 	 */
 	public static boolean checkAnswer(String correctAnswer, String userAnswer) {
 		return correctAnswer.equalsIgnoreCase(userAnswer.trim());
@@ -197,12 +197,14 @@ public class culminatingReal {
 		isCorrect = checkAnswer("C", userAnswer);
 		totalScore = calculateScore(totalScore, isCorrect);
 		System.out.println(isCorrect ? "Correct!" : "Incorrect. The correct answer is C.");
-		questionNumber++;
+	
 
 
 		// Display final score
 		System.out.println("\nTest Completed!");
-		System.out.println("Your total score is: " + totalScore + " out of " + (questionNumber - 1));
+		System.out.println("Your total score is: " + totalScore + "/" + (questionNumber));
+		//calculate %
+		System.out.println("Your total score in a percentage is " + totalScore/questionNumber*100 + "%");
 
 
 		scanner.close();
